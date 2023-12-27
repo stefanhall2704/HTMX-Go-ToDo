@@ -1,0 +1,7 @@
+## Database Setup
+
+```bash
+chmod +x setup.sh
+
+./setup.sh
+```
