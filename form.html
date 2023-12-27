@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TO-DO List</title>
+  <script src="https://unpkg.com/htmx.org"></script>
+  <script src="https://unpkg.com/htmx.org/dist/ext/remove-me.js"></script>
+</head>
+
+<body>
+  <h3>Create Task:</h3>
+  <br>
+  <form hx-post="/create_task" hx-target="#task_items" hx-swap="beforeend">
+    <label for="password">Tasks:</label>
+    <input type="text" id="task" name="task" required>
+    <button type="submit">Add New Item</button>
+  </form>
+  <h2>In Progress</h2>
+  <ul id="task_items">
+
+  </ul>
+  <h2>Complete</h2>
+  <ul id="complete">
+
+  </ul>
+</body>
+
+</html>
